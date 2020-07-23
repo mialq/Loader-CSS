@@ -5,12 +5,23 @@ body{
     justify-content: center;
     min-height: 100vh;
     transform: scale(5);
+       
+
+}
+
+.h1 {
+
+    color: rebeccapurple;
+    width: 50%;
+    height: 50vh;
+    font-family: Arial;
+    margin: 10% auto;
 
 }
 
 .c-loader {
 
-    animation: is-rotating 1s infinite;
+    animation: spin 1s infinite;
     width: 50px;
     height: 50px;
     border: 6px solid #e5e5e5;
@@ -19,8 +30,8 @@ body{
     
 }
 
-@keyframes is-rotating {
-    to {
-        transform: rotate(1turn);
-    }
+@keyframes spin {
+    
+    0%   {transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
 }
